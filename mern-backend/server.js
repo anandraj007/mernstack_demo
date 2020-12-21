@@ -19,7 +19,7 @@ connection.once("open", function () {
   console.log("mongodb connection successfull");
 });
 
-//route to get all todo list
+//route to get all todo list  
 todoRoutes.route("/").get(function (req, res) {
   Todo.find(function (err, todos) {
     if (err) {
